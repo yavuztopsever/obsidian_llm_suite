@@ -21,8 +21,8 @@ A collection of Python tools designed to enhance the Obsidian note-taking experi
 
 1.  **Clone the repository:**
     ```bash
-    git clone <repository_url>
-    cd obsidian_suite
+    git clone https://github.com/yavuztopsever/obsidian_llm_suite.git
+    cd obsidian_llm_suite
     ```
 2.  **Create and activate a virtual environment (recommended):**
     ```bash
