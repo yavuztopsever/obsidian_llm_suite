@@ -1,0 +1,5 @@
+research_query:
+  required_root_file_name: "Interview_Prep_Tess" 
+  query: "Based on this interview preparation document, what are the key points to focus on for the interview? Extract all the necessary technologies and frameworks and concepts to secure this job. Treat me as a beginner on the topics use a simple language. We want a crash course on every aspect of the interview. Provide a summary of the document and then provide a list of all the technologies and frameworks and concepts that are mentioned in the document. Provide a brief explanation of each technology, framework, or concept. Also, provide a list of all the questions that are asked in the document. Provide a brief explanation of each question" 
+  extra_context_document_paths:
+    - "/home/yavuz/Documents/vault/Interview_Prep_Tess_AI.md"

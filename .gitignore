@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Configuration Secrets
+config/.env
+.env # Also ignore .env in the root
+
+# IDE / Editor specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Research Output (if not intended for git)
+research_output/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/

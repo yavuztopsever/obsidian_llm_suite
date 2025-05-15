@@ -1,0 +1,35 @@
+# General settings for Obsidian Suite tools
+obsidian_vault_path: "/home/yavuz/Documents/vault" # IMPORTANT: Update this path
+default_llm_model: "gpt-4.1-nano"
+
+# Tool-specific settings
+tag_manager:
+  exempt_tags:
+    - "note"
+    - "category"
+    - "main"
+    - "sub"
+    - "sensitive"
+    - "person"
+    - "log"
+  standardization_prompt: "Standardize the following tags for Obsidian notes: {tags}"
+
+researcher:
+  output_directory: "/home/yavuz/Documents/vault" 
+  perplexity_model: "sonar-deep-research" 
+  openai_model: "o4-mini" # Added for stage 1 planning
+  planning_system_prompt_path: null # Optional path to custom planning prompt
+  system_prompt_path: null # Optional path to custom content generation prompt
+  request_timeout: 180 # Timeout in seconds for API requests
+
+template_manager:
+  template_folder: "templates" # Relative to vault path or absolute
+
+# Enricher tool settings
+enricher:
+  llm_model: null # Defaults to default_llm_model if null or not set
+  simple_enrich_system_prompt: "You are an AI assistant helping to enrich and improve Obsidian notes. Analyze the provided note content and suggest improvements, clarifications, or expansions. Focus on making the note more comprehensive and well-structured."
+  simple_enrich_user_prompt: "Please enrich the following note content:\n\n---\n{note_content}\n---"
+  advanced_enrich_system_prompt: "You are an AI assistant specialized in structuring information. Analyze the provided note content and generate a hierarchical structure of related notes based on the main topics and subtopics. Return the structure as a JSON object with a top-level 'title' and 'content' for the main note, and a 'children' array for sub-notes, each having 'title' and 'content'."
+  advanced_enrich_user_prompt: "Analyze the following note content and generate a hierarchical note structure in JSON format:\n\n---\n{note_content}\n---"
+  backup_files: true # Whether to create backups before overwriting files

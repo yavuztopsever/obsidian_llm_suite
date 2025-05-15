@@ -1,0 +1,10 @@
+# Core Dependencies
+openai
+requests
+python-dotenv
+PyYAML
+python-frontmatter
+jsonschema # Added for template_manager validation
+pydantic>=1.10.0 # Added for data validation
+
+# Add other dependencies as tools are refactored or added
